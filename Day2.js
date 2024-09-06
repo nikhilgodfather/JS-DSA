@@ -36,5 +36,5 @@ var exist = function(board, word) {
     
     return false;
 };
-
+//data
 exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]],"ABCCED")
