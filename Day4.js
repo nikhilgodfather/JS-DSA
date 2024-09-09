@@ -33,5 +33,5 @@ var fourSum = function(nums, target) {
         }
     }
 
-    return res;
+    console.log(res);
 };
