@@ -47,9 +47,3 @@ var findSubstring = function(s, words) {
 
 // Example 1:
 console.log(findSubstring("barfoothefoobarman", ["foo","bar"])); // Output: [0, 9]
-
-// Example 2:
-console.log(findSubstring("wordgoodgoodgoodbestword", ["word","good","best","word"])); // Output: []
-
-// Example 3:
-console.log(findSubstring("barfoofoobarthefoobarman", ["bar","foo","the"])); // Output: [6, 9, 12]
