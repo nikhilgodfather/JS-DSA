@@ -13,5 +13,3 @@ var mergeTwoLists = function(list1, list2) {
     return newArr
 };
 
-
-console.log(mergeTwoLists(list1 = [1,2,4], list2 = [1,3,4]))
