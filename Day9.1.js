@@ -23,7 +23,6 @@ var reportSpam = function (message, bannedWords) {
     return isValid >= 2; // Return true if 2 or more banned words are found
 };
 
-// Example test case
 console.log(
     reportSpam(
         ["hello", "world", "leetcode"], // message
