@@ -1,0 +1,28 @@
+var maxKelements = function(nums, k) {
+    // Max-heap implemented using a min-heap with negative values.
+    let maxHeap = new MinPriorityQueue(); // Initialize a priority queue (min-heap)
+
+    // Push negative values into the heap to simulate a max-heap
+    for (let num of nums) {
+        maxHeap.enqueue(-num); // Negate the numbers to use as a max-heap
+    }
+
+    let score = 0;
+
+    // Perform k operations
+    for (let i = 0; i < k; i++) {
+        // Pop the largest element (negated, so we negate it again to restore the original value)
+        let largest = -maxHeap.dequeue().element;
+        
+        // Add it to the score
+        score += largest;
+
+        // Replace the element with ceil(largest / 3)
+        let newVal = Math.ceil(largest / 3);
+
+        // Push the new value back into the heap (negated again for max-heap behavior)
+        maxHeap.enqueue(-newVal);
+    }
+
+    return score;
+};
