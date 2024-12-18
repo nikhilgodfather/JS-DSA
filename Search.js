@@ -6,4 +6,5 @@ var search = function(nums, target) {
     return -1
 };
 
+
 console.log(search(nums = [1], target = 1))
